@@ -36,3 +36,15 @@ Open deploy and run
 ```
 openocd -f interface/picoprobe.cfg -f target/rp2040.cfg -c "program <specific elf file> verify reset exit"
 ```
+
+# Schematic
+Just build a simple R2R ladder for the 2 channels
+![image](https://github.com/mlorenzati/picoDDS/assets/5400635/4a0bd436-a1dc-4b54-b9d4-6b9e52f45919)
+
+# Usage
+Deploy uf2 to the pico and use a serial terminal to interface with the console
+![image](https://github.com/mlorenzati/picoDDS/assets/5400635/e2a7d6f4-1720-4213-b8df-2bf5e9cbf702)
+
+To know commands just hit enter
+Commands: add(a) <value>, channel(c) <value>, frequency(f) <value>, multiply(m) <value>, offset(o) <value>, reset(r) , waveform(w) <value>
+
