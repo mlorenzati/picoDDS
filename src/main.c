@@ -80,7 +80,8 @@ uint prepare_dma_pio_dac(PIO pio, uint samplingRate, uint pinBase, void *dmaBuff
 int VCORE_OVC_RUN_IN_RAM main() {
     VCORE_OVC_PREPARE(256000); // Ignored if USE_VCORE_OVC is disabled
 
-    stdio_uart_init_full(uart_default, PICO_STDIO_UART_BAUDS, PICO_STDIO_UART_TX_PIN, PICO_STDIO_UART_RX_PIN);
+    stdio_init_all();
+    //stdio_uart_init_full(uart_default, PICO_STDIO_UART_BAUDS, PICO_STDIO_UART_TX_PIN, PICO_STDIO_UART_RX_PIN);
    
     printf("Core 0 has started\n");
     multicore_launch_core1(core1_main);
