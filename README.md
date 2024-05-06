@@ -1,6 +1,10 @@
 # picoDDS
 Raspberry Pico example with Pio, DMA and Vcore usage to build a DDS with console integration
 
+<img src="https://github.com/mlorenzati/picoDDS/assets/5400635/366c75e7-1481-4dea-9432-ea3e55b77edd" width="280">
+<img src="https://github.com/mlorenzati/picoDDS/assets/5400635/00020f9b-c265-4f9e-97b7-1f8d4062e46c" width="720">
+
+Image of the 2 channeld DDS at 256Msps, using one core as table preparing and the other for console terminal
 # Setup
 - Download the pico-sdk repository
 - Define PICO_SDK_PATH in your ~/.bashrc• 
